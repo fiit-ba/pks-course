@@ -81,7 +81,7 @@ spĺňa nasledujúce úlohy:
     
     #### Ak je na vstupe zadaný protokol s komunikáciou so spojením (tj. nad TCP):
 
-    > c)  Vypíšte ***všetky kompletné*** komunikácie aj s poradovým číslom komunikácie - obsahuje otvorenie (SYN) a ukončenie (FIN na oboch stranách alebo ukončenie FIN a RST alebo ukončenie iba s RST) spojenia. Otvorenie spojenia môže nastať dvomi spôsobmi a zatvorenie štyrmi spôsobmi.
+    > c)  Vypíšte ***všetky kompletné*** komunikácie aj s poradovým číslom komunikácie - obsahuje otvorenie (SYN) a ukončenie (FIN na oboch stranách alebo ukončenie FIN a RST alebo ukončenie iba s RST) spojenia. Otvorenie spojenia môže nastať dvomi spôsobmi a zatvorenie tromi spôsobmi.
     >
     > d)  Vypíšte ***prvú nekompletnú*** komunikáciu, ktorá obsahuje iba otvorenie alebo iba zatvorenie spojenia.
     >
@@ -114,7 +114,7 @@ spĺňa nasledujúce úlohy:
 
     #### Ak je na vstupe zadaný protokol ARP:
 
-    > i)  Vypíšte všetky ARP dvojice (request -- reply), uveďte aj IP adresu, ku ktorej sa hľadá MAC (fyzická) adresa a pri ARP-Reply uveďte konkrétny pár - IP adresa a nájdená MAC adresa. V prípade, že bolo poslaných niekoľko rámcov ARP-Request na rovnakú IP adresu, najprv identifikujte všetky ARP dvojice a vypíšte ich do jednej kompletnej komunikácie bez ohľadu na zdrojovú adresu ARP-Requestu. Následne všetky ARP requesty bez ARP reply vypíšte v jednej nekompletnej komunikácii. Rovnako, ak identifikuje viac ARP reply ako ARP request správ na rovnakú IP, tak všetky ARP reply bez ARP request vypíšte v jednej nekompletnej komunikácii. Ostatné typy ARP správ ignorujeme v rámci filtra.
+    > i)  Vypíšte všetky ARP dvojice (request -- reply), uveďte aj IP adresu, ku ktorej sa hľadá MAC (fyzická) adresa a pri ARP-Reply uveďte konkrétny pár - IP adresa a nájdená MAC adresa. V prípade, že bolo poslaných niekoľko rámcov ARP-Request na rovnakú IP adresu, najprv identifikujte všetky ARP dvojice a vypíšte ich do jednej kompletnej komunikácie bez ohľadu na zdrojovú adresu ARP-Requestu. Následne všetky ARP requesty bez ARP reply vypíšte v jednej nekompletnej komunikácii. Rovnako, ak identifikujete viac ARP reply ako ARP request správ na rovnakú IP, tak všetky ARP reply bez ARP request vypíšte v jednej nekompletnej komunikácii. Ostatné typy ARP správ ignorujeme v rámci filtra.
 
     Hodnotenie: **1 bod**
 
