@@ -97,6 +97,13 @@ Záverečný test (termín v skúškovom období) skladá sa z testu v AIS a z t
 ### Výsledné hodnotenie
 Výsledné hodnotenie, podľa klasifikačnej stupnice, je určené na základe celkového počtu získaných bodov (cvičenia + zadania + záverečný test) a splnenia vyššie uvedených podmienok.
 
+- Ak študent získa najmenej 92 bodov je hodnotený klasifikačným stupňom A,
+- ak získa najmenej 83 bodov je hodnotený klasifikačným stupňom B,
+- ak získa najmenej 74 bodov je hodnotený klasifikačným stupňom C,
+- ak získa najmenej 65 bodov je hodnotený klasifikačným stupňom D,
+- ak získa najmenej 56 bodov je hodnotený klasifikačným stupňom E,
+- ak získa menej ako 56 bodov je hodnotený klasifikačným stupňom FX.
+
 ## Výsledky vzdelávania
 Pochopiť základné koncepcie počítačových sietí, komunikačných funkcií a protokolov. Vedieť popísať sieťové modely RM OSI,TCP/IP a komunikácie v TCP/IP sieťach.Získať znalosti o architektúrach počítačových sietí LAN a WAN (dôraz kladený najmä na Ethernet siete). Zvládnuť IP adresovanie a smerovanie v sieťach. Získať praktické skúsenosti v oblasti tvorby sieťových analyzátorov a sieťovej komunikácie.
 
