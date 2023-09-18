@@ -1,5 +1,5 @@
 
-# **Zadanie 1: Analyzátor sieťovej komunikácie** ([EN](en.md))
+# **Zadanie 1: Analyzátor sieťovej komunikácie** ([EN](https://github.com/fiit-ba/pks-course/tree/main/202324/assignments/1_network_communication_analyzer/en.md))
 
 ## **Zadanie úlohy**
 
@@ -320,4 +320,4 @@ spĺňa nasledujúce úlohy:
 
 ## **Ukážky výstupu riešenia**
 
-Ukážky výstupu riešenia sú súčasťou [validátora](/202324/assignments/1_network_communication_analyzer/validator_yaml_output/examples/) na overenie správneho formátu vášho výstupu. Obsah rámcov nezodpovedá reálnej komunikácii. Podobne, uvedené IP adresy v desiatkovo-bodkovej notácii nezodpovedajú reálnym hodnotám v rámci.
+Ukážky výstupu riešenia sú súčasťou [validátora](https://github.com/fiit-ba/pks-course/tree/main/202324/assignments/1_network_communication_analyzer/validator_yaml_output/examples/) na overenie správneho formátu vášho výstupu. Obsah rámcov nezodpovedá reálnej komunikácii. Podobne, uvedené IP adresy v desiatkovo-bodkovej notácii nezodpovedajú reálnym hodnotám v rámci.

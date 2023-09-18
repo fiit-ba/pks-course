@@ -87,7 +87,7 @@ Nesplnenie ľubovoľnej z uvedených podmienok znamená, že študent neabsolvuj
 Sú realizované v súlade s harmonogramom počas cvičení. Na testy sa používa AIS, PacketTracer. Je potrebné získať minimálne počty bodov.
 
 ### Zadania
-Zadania sú popísané v samostatných dokumentoch vrátane termínov odovzdania a bodovania. (Uvedené aj v [Harmonograme](pks2324_harmonogram.pdf))
+Zadania sú popísané v samostatných dokumentoch vrátane termínov odovzdania a bodovania. (Uvedené aj v [Harmonograme](https://github.com/fiit-ba/pks-course/tree/main/202324/others/pks2324_harmonogram.pdf))
 
 ### Záverečný test
 Záverečný test (termín v skúškovom období) skladá sa z testu v AIS a z testu na papier. Je opravený a konzultovaný spravidla v deň napísania testu. Hodnoteneie je uvedené v časti [skúška](#skúška)
