@@ -32,7 +32,7 @@ spĺňa nasledujúce úlohy:
     >
     > i)  Odovzdanie do AIS do 2.10.2023 23:59 
     >
-    > j)  Riešenie tejto úlohy musí byť ***prezentované na 4. cvičení***.
+    > j)  Riešenie tejto úlohy musí byť ***prezentované na 3. cvičení***.
 
     Hodnotenie: **2 body**
 
