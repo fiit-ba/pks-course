@@ -1,4 +1,4 @@
-# Computer an   d Communication Networks - Počítačové a komunikačné siete (PKS)
+# Computer and Communication Networks - Počítačové a komunikačné siete (PKS)
 **Typ štúdia:** bakalárske  
 **Počet kreditov:** 6  
 **Semester:** zimný     
