@@ -1,0 +1,206 @@
+name: PKS2023/24
+pcap_name: all.pcap
+packets:
+  - frame_number: 1
+    len_frame_pcap: 827
+    len_frame_medium: 831
+    frame_type: ETHERNET II
+    src_mac: 00:02:CF:AB:A2:4C
+    dst_mac: B4:B5:2F:74:CB:AE
+    ether_type: IPv4
+    src_ip: 192.168.1.33
+    dst_ip: 173.194.44.32
+    protocol: TCP
+    src_port: 50041
+    dst_port: 80
+    app_protocol: HTTP
+    hexa_frame: |
+      00 02 CF AB A2 4C B4 B5 2F 74 CB AE 08 00 45 00
+      03 2D 0F B6 40 00 80 06 00 00 C0 A8 01 21 AD C2
+      2C 20 C3 71 00 50 09 89 D2 96 7C 2D 29 55 50 18
+      01 02 9E CB 00 00 47 45 54 20 2F 5F 5F 75 74 6D
+      2E 67 69 66 3F 75 74 6D 77 76 3D 35 2E 34 2E 30
+      26 75 74 6D 73 3D 32 26 75 74 6D 6E 3D 31 39 31
+      32 32 33 38 35 32 30 26 75 74 6D 68 6E 3D 77 77
+      77 2E 66 63 68 70 74 2E 73 74 75 62 61 2E 73 6B
+      26 75 74 6D 63 73 3D 75 74 66 2D 38 26 75 74 6D
+      70 2D 41 6C 69 76 65 0D 0A 0D 0A
+  
+  - frame_number: 2
+    len_frame_pcap: 827
+    len_frame_medium: 831
+    frame_type: ETHERNET II
+    src_mac: 00:02:CF:AB:A2:4C
+    dst_mac: B4:B5:2F:74:CB:AE
+    ether_type: IPv4
+    src_ip: 147.251.48.205
+    dst_ip: 192.168.1.33
+    protocol: TCP
+    src_port: 21
+    dst_port: 50025
+    app_protocol: FTP-CONTROL
+    hexa_frame: |
+      B4 B5 2F 74 CB AE 00 02 CF AB A2 4C 08 00 45 00
+      00 74 8D 2F 40 00 33 06 33 C3 93 FB 30 CD C0 A8
+      01 21 00 15 C3 69 07 39 96 98 12 AE AF B8 50 18
+      00 73 EA 48 00 00 20 74 72 61 6E 73 66 65 72 73
+      20 74 6F 20 61 6E 64 20 66 72 6F 6D 20 61 72 63
+      68 69 76 65 20 61 72 65 20 6C 6F 67 67 65 64 2E
+      20 49 66 20 79 6F 75 20 64 6F 20 6E 6F 74 20 6C
+      69 6B 65 20 74 68 69 73 20 70 6F 6C 69 63 79 2C
+      0D 0A
+
+  - frame_number: 3
+    len_frame_pcap: 86
+    len_frame_medium: 90
+    frame_type: ETHERNET II
+    src_mac: 00:02:CF:AB:A2:4C
+    dst_mac: FF:FF:FF:FF:FF:FF
+    ether_type: IPv4
+    src_ip: 192.168.1.1
+    dst_ip: 192.168.1.255
+    protocol: UDP
+    src_port: 520
+    dst_port: 520
+    app_protocol: RIP
+    hexa_frame: |
+      FF FF FF FF FF FF 00 02 CF AB A2 4C 08 00 45 00
+      00 48 02 48 00 00 01 11 33 0D C0 A8 01 01 C0 A8
+      01 FF 02 08 02 08 00 34 C0 C3 02 01 00 00 00 02
+      00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      00 02 00 02 00 00 D4 37 E0 21 00 00 00 00 00 00
+      00 00 00 00 00 00
+      
+  - frame_number: 4
+    len_frame_pcap: 60
+    len_frame_medium: 64
+    frame_type: ETHERNET II
+    src_mac: 60:6B:BD:7B:42:AF
+    dst_mac: FF:FF:FF:FF:FF:FF
+    ether_type: ARP
+    arp_opcode: REQUEST
+    src_ip: 147.175.145.234
+    dst_ip: 147.175.144.1
+    hexa_frame: |
+      FF FF FF FF FF FF 60 6B BD 7B 42 AF 08 06 00 01
+      08 00 06 04 00 01 60 6B BD 7B 42 AF 93 AF 91 EA
+      00 00 00 00 00 00 93 AF 90 01 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00 00 00
+
+  - frame_number: 5
+    len_frame_pcap: 60
+    len_frame_medium: 64
+    frame_type: IEEE 802.3 LLC
+    src_mac: 00:02:16:Fc:F0:DE
+    dst_mac: 01:80:C2:00:00:00
+    sap: STP
+    hexa_frame: |
+      01 80 C2 00 00 00 00 02 16 FC F0 DE 00 26 42 42
+      03 00 00 00 00 00 80 00 00 01 96 45 05 9A 00 00
+      00 0C 80 00 00 02 16 FC F0 DB 80 2D 03 00 14 00
+      02 00 0F 00 00 00 00 00 00 00 00 00
+
+  - frame_number: 6
+    len_frame_pcap: 106
+    len_frame_medium: 110
+    frame_type: ETHERNET II
+    src_mac: 00:14:38:06:E0:93
+    dst_mac: 00:02:CF:AB:A2:4C
+    ether_type: IPv4
+    src_ip: 192.168.1.33
+    dst_ip: 147.175.111.1
+    protocol: ICMP
+    icmp_type:
+    hexa_frame: |
+      00 02 CF AB A2 4C 00 14 38 06 E0 93 08 00 45 00
+      00 5C 23 34 00 00 01 01 D1 F3 C0 A8 01 21 93 AF
+      6F 01 08 00 E0 FF 02 00 15 00 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00
+
+  - frame_number: 7
+    len_frame_pcap: 106
+    len_frame_medium: 110
+    frame_type: IEEE 802.3 RAW
+    src_mac: 00:04:76:A4:E4:8C
+    dst_mac: FF:FF:FF:FF:FF:FF
+    hexa_frame: |
+      FF FF FF FF FF FF 00 04 76 A4 E4 8C 01 E0 FF FF
+      01 E0 00 04 30 09 80 00 FF FF FF FF FF FF 04 52
+      30 09 80 00 00 04 76 A4 E4 8C 04 52 00 02 00 04
+      53 44 41 4A 31 00 00 00 00 00 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      00 01 01 00 00 00 00 00 00 01 04 51 00 04 00 47
+      41 49 53 5F 50 53 00 00 00 00 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      00 08 01 07 00 00 00 00 00 01 80 60 00 04 02 78
+      42 45 52 4E 4F 4C 41 4B 5F 5F 5F 5F 5F 5F 5F 5F
+      5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F
+      40 42 44 40 40 40 40 40 40 40 44 85 50 4A 00 00
+      00 01 01 00 00 00 00 00 00 01 40 06 00 04 06 7B
+      4D 41 4A 45 54 4F 4B 00 09 C0 78 00 00 00 30 00
+      00 00 30 00 00 00 70 F6 55 D7 00 00 00 00 70 1F
+      08 D8 C4 DB 08 D8 74 00 92 C2 00 00 00 00 00 00
+      00 00 00 80 00 02 1E F2 24 90 05 55 00 04 02 78
+      43 56 54 49 5F 53 52 5F 5F 5F 5F 5F 5F 5F 5F 5F
+      5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F
+      40 46 EB EF 40 40 40 40 40 40 44 85 50 4A 00 00
+      00 03 9C 0E 00 00 00 00 00 01 40 06 00 06 00 4B
+      42 53 45 52 34 2E 30 30 2D 36 2E 31 30 5F 30 30
+      31 31 31 30 36 32 30 30 30 30 30 30 30 30 30 30
+      30 31 30 30 30 30 00 00 00 00 00 00 00 00 00 00
+      00 11 10 62 00 00 00 00 00 01 80 59 00 03 01 07
+      44 45 4B 41 4E 41 54 00 00 00 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+      00 11 10 73 00 00 00 00 00 01 81 04 00 02
+
+  - frame_number: 8
+    len_frame_pcap: 110
+    len_frame_medium: 114
+    frame_type: ETHERNET II
+    src_mac: 00:04:76:A4:E4:8C
+    dst_mac: 33:33:00:00:00:01
+    ether_type: IPv6
+    hexa_frame: |
+      33 33 00 00 00 01 00 04 76 A4 E4 8C 86 DD 60 00
+      00 00 00 38 3A FF FE 80 00 00 00 00 00 00 02 04
+      76 FF FE A4 E4 8C FF 02 00 00 00 00 00 00 00 00
+      00 00 00 00 00 01 86 00 0F 20 40 00 07 08 00 00
+      00 00 00 00 00 00 01 01 00 04 76 A4 E4 8C 03 04
+      40 C0 00 27 8D 00 00 09 3A 80 00 00 00 00 3F FE
+      22 00 00 00 00 01 00 00 00 00 00 00 00 00
+  
+  - frame_number: 9
+    len_frame_pcap: 60
+    len_frame_medium: 64
+    frame_type: IEEE 802.3 LLC & SNAP
+    src_mac: 00:02:16:Fc:F0:DE
+    dst_mac: 01:80:C2:00:00:00
+    pid: CDP
+    hexa_frame: |
+      01 80 C2 00 00 00 00 02 16 FC F0 DE 00 26 AA AA
+      03 00 00 00 20 04 80 00 00 01 96 45 05 9A 00 00
+      00 0C 80 00 00 02 16 FC F0 DB 80 2D 03 00 14 00
+      02 00 0F 00 00 00 00 00 00 00 00 00
+
+ipv4_senders:
+  - node: 192.168.1.33
+    number_of_sent_packets: 5
+  
+  - node: 147.251.48.205
+    number_of_sent_packets: 52
+    
+  - node: 192.168.1.1
+    number_of_sent_packets: 52
+  
+  - node: 192.168.1.105
+    number_of_sent_packets: 50
+
+max_send_packets_by:
+  - 147.251.48.205
+  - 192.168.1.1

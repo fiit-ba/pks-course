@@ -1,0 +1,97 @@
+name: str(equals = 'PKS2023/24', ignore_case=True)
+pcap_name: regex('^.*\.pcap$', min=1, ignore_case=True)
+packets: list(include('packet'), min=1, required=False)
+ipv4_senders: list(include('sender'), min=1, required=False)
+max_send_packets_by: list(ip(), min=1, required=False)
+filter_name: str(require=False, ignore_case=True, required=False)
+complete_comms: list(include('communication'), min=1, required=False)
+partial_comms: list(include('partial_communication'), min=1, required=False)
+---
+packet:
+  frame_number: int(min=0)
+  len_frame_pcap: int(min=1)
+  len_frame_medium: int(min=1)
+  frame_type: >
+    any(str(equals='ETHERNET II', ignore_case=True),
+    str(equals='IEEE 802.3 RAW', ignore_case=True),
+    str(equals='IEEE 802.3 LLC', ignore_case=True),
+    str(equals='IEEE 802.3 LLC & SNAP', ignore_case=True))
+  src_mac: mac()
+  dst_mac: mac()
+  ether_type: >
+    any(regex('^IPv[4,6]{1}$', ignore_case=True),
+    str(equals='ARP', ignore_case=True),
+    str(equals='ECTP', ignore_case=True),
+    str(equals='LLDP', ignore_case=True), required=False)
+  sap: >
+    any(str(equals='IPX', ignore_case=True),
+    str(equals='NETBIOS', ignore_case=True),
+    str(equals='STP', ignore_case=True), required=False)
+  pid: >
+    any(str(equals='AppleTalk', ignore_case=True),
+    str(equals='CDP', ignore_case=True),
+    str(equals='DTP', ignore_case=True),
+    str(equals='PVSTP+', ignore_case=True), required=False)
+  arp_opcode: >
+    any(str(equals='REQUEST', ignore_case=True),
+    str(equals='REPLY', ignore_case=True), required=False)
+  src_ip: ip(required=False)
+  dst_ip: ip(required=False)
+  id: int(min=0,required=False)
+  flags_mf: bool(allow_empty=False, required=False)
+  frag_offset: int(min=0,required=False)
+  protocol: >
+    any(str(equals='ICMP', ignore_case=True),
+    str(equals='IGMP', ignore_case=True),
+    str(equals='PIM', ignore_case=True),
+    str(equals='TCP', ignore_case=True),
+    str(equals='UDP', ignore_case=True),
+    required=False)
+  icmp_type: str(min=1, ignore_case=True, required=False)
+  icmp_id: int(min=0,required=False)
+  icmp_seq: int(min=0,required=False)
+  src_port: int(min=1, max=65535, required=False)
+  dst_port: int(min=1, max=65535, required=False)
+  app_protocol: >
+    any(str(equals='FTP-DATA', ignore_case=True),
+    str(equals='FTP-CONTROL', ignore_case=True),
+    str(equals='SSH', ignore_case=True),
+    str(equals='TELNET', ignore_case=True),
+    str(equals='SMTP', ignore_case=True),
+    str(equals='DNS', ignore_case=True),
+    str(equals='HTTP', ignore_case=True),
+    str(equals='POP3', ignore_case=True),
+    str(equals='NNTP', ignore_case=True),
+    str(equals='IMAP', ignore_case=True),
+    str(equals='BGP', ignore_case=True),
+    str(equals='LDAP', ignore_case=True),
+    str(equals='HTTPS', ignore_case=True),
+    str(equals='TIME', ignore_case=True),
+    str(equals='DHCP', ignore_case=True),
+    str(equals='TFTP', ignore_case=True),
+    str(equals='NETBIOS-NS', ignore_case=True),
+    str(equals='NETBIOS-DGM', ignore_case=True),
+    str(equals='NETBIOS-SSN', ignore_case=True),
+    str(equals='SSDP', ignore_case=True),
+    str(equals='SNMP', ignore_case=True),
+    str(equals='SNMP-TRAP', ignore_case=True),
+    str(equals='SYSLOG', ignore_case=True),
+    str(equals='RIP', ignore_case=True),
+    str(equals='DB-LSP-DISC', ignore_case=True),
+    str(equals='MDNS', ignore_case=True),
+    str(equals='TRACEROUTE', ignore_case=True), required=False)
+  hexa_frame: hexdump()
+
+sender:
+  node: ip(version=4)
+  number_of_sent_packets: int(min=0)
+
+communication:
+  number_comm: int(min=1, required=False)
+  src_comm: ip(required=False)
+  dst_comm: ip(required=False)
+  packets: list(include('packet'), min=1)
+
+partial_communication:
+  number_comm: int(min=1, required=False)
+  packets: list(include('packet'), min=1)

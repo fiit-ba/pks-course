@@ -1,0 +1,25 @@
+name: str(equals = 'PKS2023/24', ignore_case=True)
+pcap_name: regex('^.*\.pcap$', min=1, ignore_case=True)
+packets: list(include('packet'), min=1)
+---
+packet:
+  frame_number: int(min=0)
+  len_frame_pcap: int(min=1)
+  len_frame_medium: int(min=1)
+  frame_type: >
+    any(str(equals='ETHERNET II', ignore_case=True),
+    str(equals='IEEE 802.3 RAW', ignore_case=True),
+    str(equals='IEEE 802.3 LLC', ignore_case=True),
+    str(equals='IEEE 802.3 LLC & SNAP', ignore_case=True))
+  src_mac: mac()
+  dst_mac: mac()
+  sap: >
+    any(str(equals='IPX', ignore_case=True),
+    str(equals='NETBIOS', ignore_case=True),
+    str(equals='STP', ignore_case=True), required=False)
+  pid: >
+    any(str(equals='AppleTalk', ignore_case=True),
+    str(equals='CDP', ignore_case=True),
+    str(equals='DTP', ignore_case=True),
+    str(equals='PVSTP+', ignore_case=True), required=False)
+  hexa_frame: hexdump()

@@ -1,0 +1,180 @@
+name: PKS2023/24
+pcap_name: icmp.pcap
+filter_name: ICMP
+complete_comms:
+  - number_comm: 1
+    src_comm: 192.168.1.33
+    dst_comm: 72.163.4.161
+    packets:
+      - frame_number: 1
+        len_frame_pcap: 74
+        len_frame_medium: 78
+        frame_type: ETHERNET II
+        src_mac: 00:14:38:06:E0:93
+        dst_mac: 00:02:CF:AB:A2:4C
+        ether_type: IPv4
+        src_ip: 192.168.1.33
+        dst_ip: 72.163.4.161
+        protocol: ICMP
+        icmp_type: ECHO REQUEST
+        icmp_id: 512
+        icmp_seq: 4352
+        hexa_frame: |
+          00 02 cf ab a2 4c 00 14 38 06 e0 93 08 00 45 00
+          00 3c 15 77 00 00 80 01 16 3d c0 a8 01 21 48 a3
+          04 a1 08 00 3a 5c 02 00 11 00 61 62 63 64 65 66
+          67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76
+          77 61 62 63 64 65 66 67 68 69
+      
+      - frame_number: 2
+        len_frame_pcap: 74
+        len_frame_medium: 78
+        frame_type: ETHERNET II
+        src_mac: 00:02:CF:AB:A2:4C 
+        dst_mac: 00:14:38:06:E0:93
+        ether_type: IPv4
+        src_ip: 72.163.4.161
+        dst_ip: 192.168.1.33
+        protocol: ICMP
+        icmp_type: ECHO REPLY
+        icmp_id: 512
+        icmp_seq: 4352
+        hexa_frame: |
+          00 14 38 06 e0 93 00 02 cf ab a2 4c 08 00 45 00
+          00 3c 2f 3b 00 00 70 01 0c 79 48 a3 04 a1 c0 a8
+          01 21 00 00 42 5c 02 00 11 00 61 62 63 64 65 66
+          67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76
+          77 61 62 63 64 65 66 67 68 69
+  
+      - frame_number: 3
+        len_frame_pcap: 74
+        len_frame_medium: 78
+        frame_type: ETHERNET II
+        src_mac: 00:14:38:06:E0:93
+        dst_mac: 00:02:CF:AB:A2:4C
+        ether_type: IPv4
+        src_ip: 192.168.1.33
+        dst_ip: 72.163.4.161
+        protocol: ICMP
+        icmp_type: ECHO REQUEST
+        icmp_id: 512
+        icmp_seq: 4608
+        hexa_frame: |
+          00 02 cf ab a2 4c 00 14 38 06 e0 93 08 00 45 00
+          00 3c 15 77 00 00 80 01 16 3d c0 a8 01 21 48 a3
+          04 a1 08 00 3a 5c 02 00 11 00 61 62 63 64 65 66
+          67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76
+          77 61 62 63 64 65 66 67 68 69
+      
+      - frame_number: 4
+        len_frame_pcap: 74
+        len_frame_medium: 78
+        frame_type: ETHERNET II
+        src_mac: 00:02:CF:AB:A2:4C 
+        dst_mac: 00:14:38:06:E0:93
+        ether_type: IPv4
+        src_ip: 72.163.4.161
+        dst_ip: 192.168.1.33
+        protocol: ICMP
+        icmp_type: ECHO REPLY
+        icmp_id: 512
+        icmp_seq: 4608 
+        hexa_frame: |
+          00 14 38 06 e0 93 00 02 cf ab a2 4c 08 00 45 00
+          00 3c 2f 3b 00 00 70 01 0c 79 48 a3 04 a1 c0 a8
+          01 21 00 00 42 5c 02 00 11 00 61 62 63 64 65 66
+          67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76
+          77 61 62 63 64 65 66 67 68 69
+
+  - number_comm: 2
+    src_comm: 192.168.1.31
+    dst_comm: 72.163.4.162
+    packets:
+      - frame_number: 6
+        len_frame_pcap: 114
+        len_frame_medium: 118
+        frame_type: ETHERNET II
+        src_mac: CC:08:09:D4:00:00
+        dst_mac: 02:00:4C:4F:4F:50
+        ether_type: IPv4
+        src_ip: 12.0.0.1
+        dst_ip: 12.0.0.5
+        protocol: ICMP
+        icmp_type: ECHO REQUEST
+        icmp_id: 2
+        icmp_seq: 2
+        hexa_frame: |
+          02 00 4c 4f 4f 50 cc 08 09 d4 00 00 08 00 45 00
+          00 64 00 0a 00 00 ff 01 a3 89 0c 00 00 01 0c 00
+          00 05 08 00 98 90 00 02 00 02 00 00 00 00 00 01
+          e5 b4 ab cd ab cd ab cd ab cd ab cd ab cd ab cd
+          ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd
+          ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd
+          ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd
+          ab cd
+
+      - frame_number: 7
+        len_frame_pcap: 114
+        len_frame_medium: 118
+        frame_type: ETHERNET II
+        src_mac: 02:00:4C:4F:4F:50 
+        dst_mac: CC:08:09:D4:00:00
+        ether_type: IPv4
+        src_ip: 12.0.0.5
+        dst_ip: 12.0.0.1
+        protocol: ICMP
+        icmp_type: ECHO REPLY
+        icmp_id: 2
+        icmp_seq: 2 
+        hexa_frame: |
+          cc 08 09 d4 00 00 02 00 4c 4f 4f 50 08 00 45 00
+          00 64 2d 23 00 00 80 01 f5 70 0c 00 00 05 0c 00
+          00 01 00 00 a0 90 00 02 00 02 00 00 00 00 00 01
+          e5 b4 ab cd ab cd ab cd ab cd ab cd ab cd ab cd
+          ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd
+          ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd
+          ab cd ab cd ab cd ab cd ab cd ab cd ab cd ab cd
+          ab cd
+
+partial_comms:
+  - number_comm: 1
+    packets:
+      - frame_number: 42
+        len_frame_pcap: 70
+        len_frame_medium: 74
+        frame_type: ETHERNET II
+        src_mac: CC:08:09:D4:00:00
+        dst_mac: 02:00:4C:4F:4F:50
+        ether_type: IPv4
+        src_ip: 12.0.0.1
+        dst_ip: 12.0.0.5 
+        protocol: ICMP
+        icmp_type: Destination unreachable
+        hexa_frame: |
+          02 00 4c 4f 4f 50 cc 08 09 d4 00 00 08 00 45 c0
+          00 38 00 18 00 00 ff 01 a2 e7 0c 00 00 01 0c 00
+          00 05 03 03 4b 98 00 00 00 00 45 00 02 20 38 09
+          00 00 7f 11 e9 be 0c 00 00 05 0c 00 00 01 05 e6
+          c2 fd 02 0c e6 74
+  
+  - number_comm: 2
+    packets:
+      - frame_number: 1695
+        len_frame_pcap: 106
+        len_frame_medium: 110
+        frame_type: ETHERNET II
+        src_mac: 00:14:38:06:E0:93
+        dst_mac: 00:02:CF:AB:A2:4C
+        ether_type: IPv4
+        src_ip: 192.168.1.33
+        dst_ip: 147.175.111.1
+        protocol: ICMP
+        icmp_type: ECHO REQUEST
+        hexa_frame: |
+          00 02 cf ab a2 4c 00 14 38 06 e0 93 08 00 45 00
+          00 5c 23 34 00 00 01 01 d1 f3 c0 a8 01 21 93 af
+          6f 01 08 00 e0 ff 02 00 15 00 00 00 00 00 00 00
+          00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+          00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+          00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+          00 00 00 00 00 00 00 00 00 00
