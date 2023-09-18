@@ -29,7 +29,7 @@ Design and implement Ethernet network analyzer for network communications record
     >
     > i)  Submission to AIS by 2.10.2023 23:59
     >
-    > j)  The solution to this task is to be ***presented in the 4th exercise***.
+    > j)  The solution to this task is to be ***presented in the 3th exercise***.
 
     Scoring: **2 points**
 
