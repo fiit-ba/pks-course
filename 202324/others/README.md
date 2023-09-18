@@ -4,7 +4,7 @@
 **Semester:** zimný     
 **Prednášky, Cvičenie**
 
-## [Harmonogram](pks2324_harmonogram.pdf)
+## [Harmonogram](https://github.com/fiit-ba/pks-course/tree/main/202324/others/pks2324_harmonogram.pdf)
 
 ## Podmienky na absolvovanie predmetu
 **ŠTUDENT ABSOLVUJE PREDMET**,  ak celkovo dosiahne **aspoň 56 bodov**  (za semestrálne úlohy, priebežný testy a záverečný test) a súčasne **splní všetky nižšie uvedené podmienky**. 
