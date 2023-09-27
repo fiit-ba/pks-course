@@ -89,9 +89,9 @@ spĺňa nasledujúce úlohy:
 
     **Poznámky**
     
-    - Otvorenie spojenia sa štandardne deje pomocou 3-way handshake, pošlú sa spolu 3 správy, ale môže nastať prípad, že sa spolu pošlu 4 správy, pre viac informácií pozrite celú kapitolu: [TCP Connection Establishment Process: The \"Three-Way Handshake"](http://www.tcpipguide.com/free/t_TCPConnectionEstablishmentProcessTheThreeWayHandsh.htm).
+    - Otvorenie spojenia sa štandardne deje pomocou 3-way handshake, pošlú sa spolu 3 správy, ale môže nastať prípad, že sa spolu pošlu 4 správy, pre viac informácií pozrite [page 3](http://www.tcpipguide.com/free/t_TCPConnectionEstablishmentProcessTheThreeWayHandsh-3.htm) a [page 4](http://www.tcpipguide.com/free/t_TCPConnectionEstablishmentProcessTheThreeWayHandsh-4.htm) v [TCP Connection Establishment Process: The \"Three-Way Handshake"](http://www.tcpipguide.com/free/t_TCPConnectionEstablishmentProcessTheThreeWayHandsh.htm).
     
-    - Zatvorenie spojenia sa deje pomocou 4-way handshake, ale môžu nastať dve situácie, pozri celú kapitolu: [TCP Connection Termination](http://www.tcpipguide.com/free/t_TCPConnectionTermination.htm).
+    - Zatvorenie spojenia sa deje pomocou 4-way handshake, ale môžu nastať dve situácie, pozri [page 2](http://www.tcpipguide.com/free/t_TCPConnectionTermination-2.htm) a [page 4](http://www.tcpipguide.com/free/t_TCPConnectionTermination-4.htm) v [TCP Connection Termination](http://www.tcpipguide.com/free/t_TCPConnectionTermination.htm).
     - Spojenie tiež môže byť ukončené pomocou flagu [RST](https://medium.com/liveonnetwork/tcp-fin-rst-7e4eefd963b7).
 
     - Paket, ktorý iniciuje začiatok procesu ukončenia spojenia, môže okrem príznaku ***FIN*** mať nastavené aj iné príznaky ako napríklad ***PUSH***.
@@ -140,7 +140,13 @@ spĺňa nasledujúce úlohy:
 
 ## Minimálne požiadavky na akceptovanie odovzdaného zadania:
 
--   Program musí byť implementovaný v jazykoch C/C++ alebo Python s využitím knižnice pcap,  skompilovateľný a spustiteľný v učebniach. Na otvorenie pcap súborov použite knižnice *libpcap* pre linux/BSD a *winpcap/ npcap* pre Windows.
+-   Program musí byť implementovaný v jazykoch C/C++ alebo Python s využitím knižnice pcap alebo scapy,  skompilovateľný a spustiteľný v učebniach. Na otvorenie pcap súborov použite knižnice *libpcap* pre linux/BSD a *winpcap/ npcap* pre Windows. Nie je dôležitý názov knižnice, ale aby poskytovala nasledujúcu povolenú funkcionalitu:
+    -   otvorenie a zatvorenie .pcap súboru,
+    -   načítanie rámca ako bytové pole alebo hexdump,
+    -   načítanie ďaľšieho rámca v poradí z pcap. súboru,
+    -   získanie informácie o dĺžke rámca.
+
+    Iná funckionalita knižnice nie je povolená a je potrebné implementovať vlastnú logiku na parsovanie rámcov.
 
 -   V programe môžu byť použité údaje o dĺžke rámca zo *struct* *pcap\_pkthdr* a funkcie na prácu s pcap súborom a načítanie rámcov:
 
