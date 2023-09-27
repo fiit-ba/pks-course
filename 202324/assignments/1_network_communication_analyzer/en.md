@@ -85,9 +85,9 @@ Design and implement Ethernet network analyzer for network communications record
 
     **Notes**
     
-    - By default, the connection is opened using a 3-way handshake , 3 messages are sent together, but it may happen that 4 messages are sent, for more information, see the whole chapter: [TCP Connection Establishment Process: The \"Three-Way Handshake"](http://www.tcpipguide.com/free/t_TCPConnectionEstablishmentProcessTheThreeWayHandsh.htm).
+    - By default, the connection is opened using a 3-way handshake , 3 messages are sent together, but it may happen that 4 messages are sent, for more information, see [page 3](http://www.tcpipguide.com/free/t_TCPConnectionEstablishmentProcessTheThreeWayHandsh-3.htm) and [page 4](http://www.tcpipguide.com/free/t_TCPConnectionEstablishmentProcessTheThreeWayHandsh-4.htm) in [TCP Connection Establishment Process: The \"Three-Way Handshake"](http://www.tcpipguide.com/free/t_TCPConnectionEstablishmentProcessTheThreeWayHandsh.htm).
     
-    - The connection is closed using a 4-way handshake , but two situations can occur, see the entire chapter: [TCP Connection Termination](http://www.tcpipguide.com/free/t_TCPConnectionTermination.htm).
+    - The connection is closed using a 4-way handshake , but two situations can occur, see [page 2](http://www.tcpipguide.com/free/t_TCPConnectionTermination-2.htm) and [page 4](http://www.tcpipguide.com/free/t_TCPConnectionTermination-4.htm) in [TCP Connection Termination](http://www.tcpipguide.com/free/t_TCPConnectionTermination.htm)
     - The connection can also be terminated using a flag [RST](https://medium.com/liveonnetwork/tcp-fin-rst-7e4eefd963b7).
 
     - The packet that initiates the start of the connection termination process may have other flags set, such as ***PUSH***, in addition to the ***FIN*** flag.
@@ -136,7 +136,13 @@ Design and implement Ethernet network analyzer for network communications record
 
 ## Minimum requirements for accepting a submitted assignment:
 
--   The program must be implemented in C/C++ or Python using the pcap library, be compilable and executable in classrooms. Use libpcap for linux /BSD and winpcap / npcap for Windows to open pcap files.
+-   The program must be implemented in C/C++ or Python using the pcap or scapy library, be compilable and executable in classrooms. Use libpcap for linux /BSD and winpcap / npcap for Windows to open pcap files. Library can be named any, but it should provide the following accepted functions:
+    -   opening and closing pcap file,
+    -   loading a frame as byte array or hexdump,
+    -   loading the next frame from pcap file,
+    -   getting the length of the frame.
+    
+    No other library functionality is allowed and custom logic must be implemented to parse the frames.
 
 -   The program can use frame length data from struct pcap_pkthdr and functions for working with pcap file and loading frames:
 
