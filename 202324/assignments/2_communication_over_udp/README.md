@@ -133,7 +133,7 @@ Návrh a zdrojový kód implementácie študent odovzdáva v elektronickom tva
 Študent by mal byť vedieť filtrovať segmenty aplikácie pomocou nástroja Wireshark a vedieť identifikovať typy správ navrhnutého protokolu počas demonštrovania svojej aplikácie na cvičení.
 
 #### Úloha 1 - Návrh programu a komunikačného protokolu
-Hodnotí sa prehľadnosť a zrozumiteľnosť odovzdanej dokumentácie ako aj kvalita navrhovaného riešenia. 5 bodov získa študent, ktorý má v dokumentácií uvedené všetky podstatné informácie o fungovaní jeho programu. <ins>Korektne navrhnutú štruktúru hlavičky vlastného protokolu</ins>, opis použitej metódy kontrolnej sumy a fungovania ARQ, <ins>metódy pre udržanie spojenia, diagram spracovávania komunikácie na oboch uzloch (sekvenčný)</ins>, popis jednotlivých častí zdrojového kódu (knižnice, triedy, metódy, ...). Podčiarknuté požiadavky sú minimálne. 
+Hodnotí sa prehľadnosť a zrozumiteľnosť odovzdanej dokumentácie ako aj kvalita navrhovaného riešenia. 4 bodov získa študent, ktorý má v dokumentácií uvedené všetky podstatné informácie o fungovaní jeho programu. <ins>Korektne navrhnutú štruktúru hlavičky vlastného protokolu</ins>, opis použitej metódy kontrolnej sumy a fungovania ARQ, <ins>metódy pre udržanie spojenia, diagram spracovávania komunikácie na oboch uzloch (sekvenčný)</ins>, popis jednotlivých častí zdrojového kódu (knižnice, triedy, metódy, ...). Podčiarknuté požiadavky sú minimálne. 
 
 #### Úloha 2 - Príprava
 Nastaviť a overiť konektivitu medzi 2 uzlami, spustiť na oboch uzloch Wireshark. Spustiť zachytávanie vo Wireshark a nastaviť filter na zobrazenie iba komunikácie vlastného programu. Každý prenos sa kontroluje aj cez Wireshark.
